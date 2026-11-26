@@ -7,11 +7,10 @@ offline GOPROXY.
 ## Install
 
 ```bash
-GOPRIVATE=github.com/AvnonIdo/* go install github.com/AvnonIdo/gomodsbundle@latest
+go install github.com/AvnonIdo/gomodsbundle@latest
 ```
 
-`GOPRIVATE` is needed while the repo is private, so Go fetches it straight
-from GitHub instead of the public proxy. Or, from a clone:
+Or, from a clone:
 
 ```bash
 go build -o gomodsbundle .
